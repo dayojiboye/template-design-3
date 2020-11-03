@@ -77,17 +77,6 @@ ion-icon[name='trash-outline'] {
   font-size: 1.2rem;
 }
 
-/* .fa-angle-down {
-  color: rgb(80, 75, 75);
-  font-size: 1.7rem;
-  margin-top: 0.2rem;
-}
-
-.fa-plus-circle {
-  vertical-align: middle;
-  margin-right: 0.5rem;
-} */
-
 ion-icon[name='close-outline'] {
   font-size: 1.5rem;
   vertical-align: middle;

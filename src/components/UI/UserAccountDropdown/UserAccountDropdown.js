@@ -8,14 +8,14 @@ const userAccountDropdown = (props) => {
   let showDropdownMenu = null;
 
   if (props.showIcon) {
-    icon = <i className="fal fa-angle-down"></i>;
+    icon = <ion-icon name="chevron-down-outline" data-chevron-nav></ion-icon>;
 
     showDropdownMenu = (event) => {
       event.currentTarget.nextSibling.classList.toggle(classes.Show);
       event.currentTarget.parentNode.classList.toggle(classes.Bg);
       event.currentTarget
-        .querySelector('i')
-        .classList.toggle('fa-flip-vertical');
+        .querySelector('[data-chevron-nav]')
+        .classList.toggle('flip');
     };
   }
 
