@@ -1,0 +1,79 @@
+.PaymentPos {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 3rem;
+}
+
+.PosImage {
+  width: 50%;
+  margin-right: 1rem;
+}
+
+.PosImage img {
+  width: 100%;
+}
+
+.PosContent {
+  width: 50%;
+  padding: 0 1.5rem;
+}
+
+.PosContent h2 {
+  color: #3e4348;
+  line-height: 1.7;
+}
+
+.PosContent p {
+  color: #3e4348;
+  line-height: 1.7;
+}
+
+.PosContent ul {
+  padding: 0;
+  list-style: none;
+}
+
+.PosContent ul li {
+  margin-bottom: 1rem;
+}
+
+.PosContent a {
+  color: #5174d1;
+  white-space: nowrap;
+}
+
+@media (max-width: 594px) {
+  .PaymentPos {
+    flex-flow: column;
+    padding: 3rem 1.3rem;
+  }
+
+  .PosImage {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .PosContent {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media (max-width: 842px) and (min-width: 799px) {
+  .PaymentPos {
+    padding: 3rem 4rem;
+  }
+}
+
+@media (min-width: 1023px) {
+  .PaymentPos {
+    padding: 3rem 9rem;
+  }
+}
+
+@media (max-width: 1034px) and (min-width: 1023px) {
+  .PaymentPos {
+    padding: 3rem 10rem;
+  }
+}

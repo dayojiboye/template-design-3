@@ -1,0 +1,60 @@
+.Merchant {
+  width: 100%;
+  padding: 2rem 3rem;
+}
+
+.MerchantBorder {
+  border: none;
+  border-top: 1px solid #d5d8db;
+  height: 0;
+}
+
+.Content {
+  width: 500px;
+  max-width: 100%;
+  margin: 4.5rem auto;
+  text-align: center;
+}
+
+.Content h2 {
+  color: #3e4348;
+  line-height: 1.7;
+}
+
+.Content p {
+  color: #3e4348;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.Content a {
+  color: #5174d1;
+}
+
+.Word {
+  white-space: nowrap;
+}
+
+@media (max-width: 594px) {
+  .Merchant {
+    padding: 2rem 1.3rem;
+  }
+}
+
+@media (max-width: 842px) and (min-width: 799px) {
+  .Merchant {
+    padding: 2rem 4rem;
+  }
+}
+
+@media (min-width: 1023px) {
+  .Merchant {
+    padding: 2rem 9rem;
+  }
+}
+
+@media (max-width: 1034px) and (min-width: 1023px) {
+  .Merchant {
+    padding: 2rem 10rem;
+  }
+}

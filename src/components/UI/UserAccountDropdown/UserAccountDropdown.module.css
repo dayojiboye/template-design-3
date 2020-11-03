@@ -1,0 +1,80 @@
+.UserDropdown.Bg {
+  background: #eceef1;
+}
+
+.UserDropdown button {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font: inherit;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(80, 75, 75);
+  padding: 1.5rem 2rem;
+  cursor: default;
+}
+
+.DropdownMenu a:hover {
+  background: transparent;
+}
+
+@media (max-width: 995px) {
+  .DropdownMenu {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .DropdownMenu.Show {
+    max-height: 200px;
+  }
+
+  .DropdownMenu a {
+    display: block;
+    color: rgb(58, 55, 55) !important;
+    padding: 0.3rem 2rem 1.5rem 2rem !important;
+    font-weight: lighter !important;
+  }
+}
+
+@media (min-width: 996px) {
+  .UserDropdown {
+    position: relative;
+  }
+
+  .UserDropdown button {
+    padding: 16px;
+    color: black;
+  }
+
+  .UserDropdown:hover .DropdownMenu {
+    display: block;
+  }
+
+  .DropdownMenu {
+    position: absolute;
+    display: none;
+    min-width: 160px;
+    padding: 1rem 0;
+    background: white;
+    box-shadow: -1px 5px 30px -16px rgba(43, 42, 43, 1);
+    border-top: 1px solid whitesmoke;
+    border-radius: 5px;
+    z-index: 1;
+  }
+
+  .DropdownMenu a {
+    display: block;
+    color: rgb(58, 55, 55) !important;
+    padding: 12px 16px;
+    font-weight: lighter !important;
+  }
+
+  .DropdownMenu a:hover {
+    background: #e5ecee;
+  }
+}

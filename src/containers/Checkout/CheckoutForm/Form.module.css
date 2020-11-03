@@ -1,0 +1,139 @@
+.Form {
+  width: 550px;
+  max-width: 90%;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+.Form h2 {
+  text-align: center;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.InputGroup {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.FormGroup {
+  width: 90%;
+  margin-bottom: 1.5rem;
+}
+
+.Label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.7rem;
+  font-size: 0.8rem;
+}
+
+.Label.Invalid {
+  color: red;
+}
+
+.Input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 3px;
+  font-size: 1rem;
+  color: gray;
+  outline: none;
+  transition: border 0.4s ease-in-out;
+}
+
+.Input:focus {
+  border: 1px solid #49a4d5;
+}
+
+.Input.Invalid {
+  border: 1px solid red;
+  background: url('../../../assets/icons/risk.svg');
+  background-repeat: no-repeat;
+  background-position: 95% 13px;
+  background-size: 17px;
+}
+
+.Error {
+  color: red;
+  display: block;
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+  line-height: 1.5;
+}
+
+.FormFooter {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.SubmitBtn {
+  padding: 0.7rem 2rem;
+  background: #49a4d5;
+  border: 1px solid #49a4d5;
+  color: white;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.SubmitBtn:hover {
+  background: #1b88c2;
+  border: 1px solid #1b88c2;
+}
+
+.SubmitBtn:disabled {
+  background: #ccc;
+  border: 1px solid #ccc;
+  cursor: not-allowed;
+}
+
+.ModalText {
+  font-weight: bold;
+  text-align: center;
+}
+
+.ModalActions {
+  margin: 2rem auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.Cancel {
+  width: 40%;
+  background: red;
+  border: 1px solid red;
+  border-radius: 3px;
+  padding: 0.7rem 0;
+  color: white;
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+}
+
+.Continue {
+  width: 40%;
+  background: green;
+  border: 1px solid green;
+  border-radius: 3px;
+  padding: 0.7rem 0;
+  color: white;
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+}

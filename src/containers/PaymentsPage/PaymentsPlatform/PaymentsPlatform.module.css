@@ -1,0 +1,64 @@
+.Platform {
+  margin: 0 3rem;
+  padding-bottom: 4rem;
+}
+
+.PlatformContent {
+  text-align: center;
+}
+
+.PlatformContent h3 {
+  color: #3e4348;
+  margin: 0;
+}
+
+.PlatformContent p {
+  line-height: 1.7;
+}
+
+.PlatformContent a {
+  color: #5174d1;
+  line-height: 1.7;
+}
+
+.PlatformImage {
+  margin-top: 1.7rem;
+}
+
+.PlatformImage img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.Word {
+  white-space: nowrap;
+}
+
+@media (max-width: 594px) {
+  .Platform {
+    margin: 0 1.3rem;
+  }
+
+  .PlatformContent {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 842px) and (min-width: 799px) {
+  .Platform {
+    margin: 0 4rem;
+  }
+}
+
+@media (min-width: 1023px) {
+  .Platform {
+    margin: 0 9rem;
+  }
+}
+
+@media (max-width: 1034px) and (min-width: 1023px) {
+  .Platform {
+    margin: 0 10rem;
+  }
+}

@@ -1,0 +1,63 @@
+.Business {
+  width: 100%;
+  background: white;
+  padding-top: 4rem;
+}
+
+.BusinessHeader {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.BusinessHeader h2 {
+  font-size: 1.8rem;
+  color: #3e4348;
+  width: 400px;
+  max-width: 90%;
+  margin: auto;
+  line-height: 1.7;
+}
+
+.BusinessHeader p {
+  color: #3e4348;
+  width: 500px;
+  max-width: 90%;
+  margin: 1rem auto;
+  line-height: 1.7;
+}
+
+.Card {
+  padding: 0 1rem 2rem 1rem;
+  /* display: inline-block; */
+}
+
+.CardImg img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.Content h3 {
+  color: #3e4348;
+}
+
+.Content p {
+  color: #3e4348;
+  line-height: 1.7;
+}
+
+.ModalTrigger {
+  background: transparent;
+  border: none;
+  font: inherit;
+  color: #5174d1;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+@media (max-width: 594px) {
+  .Card {
+    padding: 0 0 2rem 0;
+    margin: 0 -0.701rem;
+  }
+}

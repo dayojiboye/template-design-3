@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: SF-regular;
+  src: url('assets/fonts/SF-UI-Display-Regular.otf');
+}
+
+html {
+  font-family: SF-regular;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100%;
+}
+
+html.fixed,
+body.fixed {
+  height: 100%;
+  overflow: hidden;
+}
+
+ion-icon[name='chevron-forward-outline'] {
+  font-size: 0.7rem;
+  vertical-align: middle;
+}
+
+ion-icon[data-chevron-down] {
+  font-size: 0.7rem;
+  margin-bottom: 0.2rem;
+  vertical-align: middle;
+  display: none;
+  transition: all 0.2s ease;
+}
+
+ion-icon[data-chevron-down].rotate {
+  margin-bottom: 0.4rem;
+  transform: rotateZ(-180deg);
+}
+
+ion-icon[data-chevron-nav] {
+  font-size: 1.1rem;
+}
+
+ion-icon[data-chevron-nav].flip {
+  transform: rotate(180deg);
+}
+
+ion-icon[name='add-circle-outline'] {
+  font-size: 2rem;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+ion-icon[name='cart-outline'] {
+  vertical-align: middle;
+}
+
+ion-icon[data-nav-cart] {
+  font-size: 2rem;
+}
+
+ion-icon[name='car-sport-outline'],
+ion-icon[name='ribbon-outline'] {
+  font-size: 5rem;
+  color: #3e4348;
+}
+
+ion-icon[name='trash-outline'] {
+  font-size: 1.2rem;
+}
+
+/* .fa-angle-down {
+  color: rgb(80, 75, 75);
+  font-size: 1.7rem;
+  margin-top: 0.2rem;
+}
+
+.fa-plus-circle {
+  vertical-align: middle;
+  margin-right: 0.5rem;
+} */
+
+ion-icon[name='close-outline'] {
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+
+ion-icon[name='checkmark-outline'] {
+  color: #5174d1;
+  margin-right: 0.3rem;
+  vertical-align: middle;
+  font-size: 1.2rem;
+}
+
+.social:nth-of-type(-n + 2) {
+  margin-right: 1rem;
+}
+
+.social a ion-icon {
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+}
+
+input[type='email'],
+input[type='password'],
+input[type='text'] {
+  -webkit-appearance: none;
+}
+
+input[type='checkbox'] {
+  -webkit-appearance: none;
+}
+
+.MuiBadge-anchorOriginTopRightRectangle {
+  top: 3px !important;
+  right: 3px !important;
+}
+
+@media (max-width: 700px) {
+  ion-icon[data-chevron-down] {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 950px) {
+  html.fixed,
+  body.fixed {
+    height: 100%;
+    overflow: auto;
+  }
+}

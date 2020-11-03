@@ -1,0 +1,79 @@
+.PaymentsPromise {
+  width: 100%;
+  background: #eceef1;
+  padding: 4rem 1rem 2rem 1rem;
+}
+
+.PromiseInfo {
+  text-align: center;
+}
+
+.PromiseInfo h2 {
+  font-size: 1.8rem;
+  color: #3e4348;
+}
+
+.PromiseInfo p {
+  width: 400px;
+  max-width: 90%;
+  margin: auto;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #3e4348;
+  line-height: 1.7;
+}
+
+.PromiseGrid {
+  margin: 2rem;
+  display: flex;
+}
+
+.Col1 {
+  margin-right: 1.8rem;
+}
+
+.ColImg img {
+  width: 100%;
+  max-height: 280px;
+  object-fit: cover;
+}
+
+.Col1 p,
+.Col2 p {
+  color: #3e4348;
+  font-weight: bold;
+}
+
+@media (max-width: 594px) {
+  .PaymentsPromise {
+    padding: 4rem 0 2rem 0;
+  }
+
+  .PromiseGrid {
+    flex-flow: column;
+    margin: 2rem 1.3rem;
+  }
+
+  .Col1 {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 842px) and (min-width: 799px) {
+  .PromiseGrid {
+    margin: 2rem 3rem;
+  }
+}
+
+@media (min-width: 1023px) {
+  .PromiseGrid {
+    margin: 2rem 8rem;
+  }
+}
+
+@media (max-width: 1034px) and (min-width: 1023px) {
+  .PromiseGrid {
+    margin: 2rem 9rem;
+  }
+}

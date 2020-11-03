@@ -1,0 +1,91 @@
+.Warranty {
+  width: 100%;
+  background: #eceef1;
+  padding: 5rem 0;
+}
+
+.WarrantyGrid {
+  width: 82%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.CardOne,
+.CardTwo {
+  width: 530px;
+  max-width: 49%;
+  display: flex;
+  background: white;
+  border: 1px solid #ccc;
+  margin-bottom: 2rem;
+  padding: 2rem 1.5rem;
+  max-height: 350px;
+  flex: 1
+}
+
+.WarrantyIcon {
+  width: 80px;
+}
+
+.WarrantyDetails {
+  width: auto;
+  margin-left: 1rem;
+}
+
+.WarrantyDetails h4 {
+  text-transform: capitalize;
+  color: #3e4348;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.WarrantyDetails p {
+  color: #3e4348;
+  line-height: 1.5;
+}
+
+.WarrantyDetails span {
+  color: #49a4d5;
+  line-height: 1.5;
+}
+
+.Word {
+  white-space: nowrap;
+}
+
+@media (max-width: 749px) {
+  .Warranty {
+    padding: 3rem 0;
+  }
+
+  .WarrantyGrid {
+    flex-flow: column;
+    padding: 0 1rem;
+  }
+
+  .CardOne,
+  .CardTwo {
+    max-width: 100%;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+    max-height: 100%;
+  }
+
+  .WarrantyIcon {
+    width: auto;
+  }
+
+  .WarrantyDetails {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .WarrantyDetails h4 {
+    margin-top: 1rem;
+  }
+}

@@ -1,0 +1,125 @@
+.Resources {
+  background: #e5ecee;
+  width: 100%;
+}
+
+.Resources h2 {
+  font-size: 1.7rem;
+  line-height: 1.3;
+  margin: 0;
+  text-align: center;
+}
+
+.Resources p {
+  line-height: 1.7;
+  text-align: center;
+}
+
+.ResourcesImg {
+  width: 100%;
+}
+
+.ResourcesImg img {
+  width: 100%;
+  max-height: 550px;
+  object-fit: cover;
+}
+
+.ResourcesContent {
+  padding: 6rem 1rem;
+}
+
+.ResourcesCards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3.5rem 5rem;
+}
+
+.Card {
+  background: white;
+  box-shadow: -1px 5px 23px -16px rgba(43, 42, 43, 1);
+  width: 500px;
+  max-width: 100%;
+  height: 450px;
+  text-decoration: none;
+  display: block;
+}
+
+.CardImg {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.Right {
+  margin-right: 2rem;
+}
+
+.CardImg img {
+  width: 100%;
+  height: 183px;
+  object-fit: contain;
+}
+
+.CardContent {
+  text-align: center;
+  padding: 0 1rem;
+  color: black;
+}
+
+.CardContent h3 {
+  font-size: 1.3rem;
+  line-height: 1.3;
+}
+
+.CardContent p {
+  line-height: 1.7;
+}
+
+.CardLink {
+  color: #49a4d5;
+  margin-top: 2rem;
+}
+
+.ResourcesLink {
+  width: 100%;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.ResourcesLink a {
+  display: inline-block; 
+  color: #49a4d5;
+  text-decoration: none;
+  
+}
+
+@media (max-width: 700px) {
+  .ResourcesCards {
+    flex-flow: column;
+    padding: 3.5rem 1rem;
+  }
+
+  .Card {
+    margin-bottom: 2rem;
+  }
+
+  .Right {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1023px) {
+  .ResourcesCards {
+    padding: 3.5rem 10rem;
+  }
+
+  .Card {
+    height: 500px;
+  }
+
+  .CardImg img {
+    height: 300px;
+  }
+}

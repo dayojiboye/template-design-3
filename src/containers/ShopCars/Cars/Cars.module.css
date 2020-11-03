@@ -1,0 +1,138 @@
+.Cars {
+  width: 100%;
+}
+
+.Header {
+  width: 100%;
+  background: #eceef1;
+  padding: 1rem;
+}
+
+.Header h1 {
+  width: 500px;
+  max-width: 100%;
+  margin: 3rem auto;
+  line-height: 1.3;
+  font-size: 2.3rem;
+  letter-spacing: 1px;
+  color: #3e4348;
+}
+
+.CarsGrid {
+  padding: 5rem 0;
+  width: 85%;
+  margin: auto;
+}
+
+.CarsGrid ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.CarsGrid ul li {
+  background: white;
+  margin: 0 auto 3rem auto;
+  border: 1px solid white;
+  border-radius: 3px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  flex-basis: calc(33% - 40px);
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.CarImg {
+  width: 100%;
+  overflow: hidden;
+}
+
+.CarImg img {
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.7s ease-in-out;
+}
+
+.CarImg img:hover {
+  transform: scale(1.2); 
+}
+
+.CarInfo {
+  width: 100%;
+  padding: 1rem;
+}
+
+.CarInfo h3 {
+  margin: 0;
+  text-transform: uppercase;
+  color: #3e4348;
+}
+
+.CarColor {
+  color: #3e4348;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.CarDesc {
+  color: #3e4348;
+  text-transform: capitalize;
+  margin-bottom: 0;
+  line-height: 1.7;
+}
+
+.CardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.BuyCar {
+  padding: 0;
+  color: #3e4348;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.BuyCar:hover {
+  color: #49a4d5;
+}
+
+.CarPrice {
+  color: #3e4348;
+  font-weight: bold;
+}
+
+.ErrorHeader {
+  color: #3e4348;
+  line-height: 1.5;
+  min-width: 50%;
+  margin: auto;
+}
+
+@media (max-width: 749px) {
+  .Header h1 {
+    margin: initial;
+  }
+
+  .CarsGrid {
+    padding: 5rem 1rem;
+  }
+
+  .CarsGrid ul {
+    flex-flow: column;
+  }
+
+  .CarsGrid ul li {
+    width: 100%;
+  }
+}

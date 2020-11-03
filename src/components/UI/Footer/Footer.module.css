@@ -1,0 +1,10 @@
+.Footer {
+  background: #1b2126;
+  padding: 3rem 5rem;
+}
+
+@media (min-width: 950px) {
+  .Footer {
+    padding: 3rem 11rem;
+  }
+}

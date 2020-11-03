@@ -1,0 +1,83 @@
+.Heading {
+  width: 700px;
+  max-width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.Heading h1 {
+  font-size: 1.5rem;
+  color: #3e4348;
+  line-height: 1.5;
+}
+
+.Heading p {
+  color: #3e4348;
+  line-height: 1.5;
+  font-size: 0.9rem;
+}
+
+.Grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 780px;
+  max-width: 100%;
+  margin: 1.7rem auto;
+}
+
+.GridItem {
+  width: 32%;
+  text-align: center;
+  display: flex;
+  /* flex-flow: column; */
+}
+
+.Icon img {
+  width: 60px;
+  object-fit: cover;
+}
+
+.Content small {
+  display: block;
+  margin: 1rem 0;
+  color: #3e4348;
+  font-weight: bold;
+}
+
+.Content p {
+  color: #3e4348;
+  line-height: 1.5;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 700px) {
+  .Heading {
+    text-align: left;
+  }
+
+  .Heading h1 {
+    width: 80%;
+  }
+
+  .Grid {
+    flex-flow: column;
+  }
+
+  .GridItem {
+    width: 100%;
+    text-align: left;
+    /* flex-flow: row; */
+    margin-bottom: 1rem;
+  }
+
+  /* .Icon {
+    margin-right: 1.5rem;
+    width: 60px;
+    background: red;
+  } */
+
+  /* .Content small {
+    margin: 0;
+  } */
+}

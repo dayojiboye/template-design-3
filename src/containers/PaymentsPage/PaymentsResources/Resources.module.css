@@ -1,0 +1,73 @@
+.Resources {
+  width: 100%;
+  padding: 3rem 2rem;
+}
+
+.Resources h2 {
+  color: #3e4348;
+  text-align: center;
+}
+
+.Grid {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  /* background: red; */
+}
+
+.GridItem {
+  width: 50%;
+  padding: 0 13px;
+  margin-bottom: 1.5rem;
+}
+
+.GridItem p {
+  color: #3e4348;
+  line-height: 1.7;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.GridItem a {
+  color: #5174d1;
+}
+
+@media (max-width: 594px) {
+  .Resources {
+    padding: 3rem 1.3rem;
+  }
+
+  .Grid {
+    flex-flow: column;
+  }
+
+  .GridItem {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media (max-width: 842px) and (min-width: 799px) {
+  .Resources {
+    padding: 3rem 3rem;
+  }
+}
+
+@media (min-width: 1023px) {
+  .Resources {
+    padding: 3rem 8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .GridItem {
+    width: 25%;
+  }
+}
+
+@media (max-width: 1034px) and (min-width: 1023px) {
+  .Resources {
+    padding: 3rem 9rem;
+  }
+}

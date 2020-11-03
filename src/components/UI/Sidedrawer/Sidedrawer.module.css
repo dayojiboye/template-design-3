@@ -1,0 +1,92 @@
+.Sidedrawer {
+  position: fixed;
+  right: -100%;
+  top: 58px;
+  bottom: 0;
+  width: 100%;
+  max-height: none !important;
+  pointer-events: auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  z-index: 100;
+  background: white;
+  border-top: 1px solid #ccc;
+  transition: all 0.2s ease-out;
+}
+
+.Sidedrawer.Visible {
+  right: 0;
+}
+
+.Navbar {
+  width: 100%;
+  height: 100%;
+}
+
+.Navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.Hasdropdown,
+.NavLink {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: -2px;
+}
+
+.Hasdropdown.Bg {
+  background: #eceef1;
+}
+
+.ButtonNav {
+  width: 100%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font: inherit;
+  font-weight: bold;
+  color: rgb(80, 75, 75);
+  padding: 1.5rem 2rem;
+  border: none;
+  outline: none;
+}
+
+.DropdownMenu {
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.DropdownMenu.Show {
+  max-height: 200px;
+}
+
+.DropdownMenu a {
+  display: block;
+  color: rgb(58, 55, 55);
+  padding: 0.3rem 2rem 1.5rem 2rem;
+}
+
+.NavLink a {
+  display: block;
+  font-weight: bold;
+  color: rgb(80, 75, 75);
+  padding: 1.5rem 2rem;
+}
+
+@media (max-width: 949px) and (min-width: 700px) {
+  .Sidedrawer {
+    width: 50%;
+  }
+}
+
+@media (min-width: 950px) {
+  .Sidedrawer {
+    display: none;
+  }
+}

@@ -1,0 +1,123 @@
+.Options {
+  width: 100%;
+  background: white;
+  padding: 4rem 2rem 2rem 2rem;
+}
+
+.OptionsHeader {
+  text-align: center;
+  width: 600px;
+  max-width: 100%;
+  margin: 1rem auto;
+}
+
+.OptionsHeader h2 {
+  font-size: 1.8rem;
+  color: #3e4348;
+  letter-spacing: 1px;
+}
+
+.OptionsHeader p {
+  line-height: 1.7;
+}
+
+.OptionsHeader p a {
+  color: #5174d1;
+}
+
+.OptionsGrid {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3.5rem;
+}
+
+.OptionsCard {
+  width: 33.3%;
+  padding: 0 1rem;
+  margin: 2rem 0;
+}
+
+.CardImg img {
+  object-fit: cover;
+  width: 100px;
+}
+
+.CardContent h3 {
+  color: #3e4348;
+  margin: 0;
+}
+
+.CardContent p {
+  line-height: 1.7;
+  margin-bottom: 1.7rem;
+}
+
+.CardLink a {
+  color: #5174d1;
+  line-height: 1.7;
+}
+
+hr.GridBorder {
+  border: none;
+  border-top: 1px solid #d5d8db;
+  height: 0;
+  margin: 0 1rem;
+}
+
+.Word {
+  white-space: nowrap;
+}
+
+@media (max-width: 594px) {
+  .Options {
+    padding: 3rem 1.3rem 2rem 1.3rem;
+  }
+
+  .OptionsGrid {
+    flex-flow: column;
+  }
+
+  .OptionsCard {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  hr.GridBorder {
+    margin: 0;
+  }
+}
+
+@media (max-width: 842px) and (min-width: 799px) {
+  .OptionsCard {
+    padding: 0 2rem;
+  }
+
+  hr.GridBorder {
+    margin: 0 2rem;
+  }
+}
+
+@media (min-width: 1023px) {
+  .OptionsGrid {
+    padding: 0 6rem;
+  }
+
+  hr.GridBorder {
+    margin: 0 7rem;
+  }
+}
+
+@media (max-width: 1034px) and (min-width: 1023px) {
+  .OptionsCard {
+    padding: 0 2rem;
+  }
+
+  hr.GridBorder {
+    margin: 0 8rem;
+  }
+}

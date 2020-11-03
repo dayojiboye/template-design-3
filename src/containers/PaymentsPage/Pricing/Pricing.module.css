@@ -1,0 +1,133 @@
+.Pricing {
+  width: 100%;
+  background: #eceef1;
+  padding: 3rem;
+}
+
+.PricingHeader {
+  text-align: center;
+}
+
+.PricingHeader h2 {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  color: #3e4348;
+}
+
+.GridOne {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+
+.Box1,
+.Box2 {
+  width: 50%;
+  margin-bottom: 1rem;
+}
+
+.Box1,
+.Cardbox1 {
+  margin-right: 2rem;
+}
+
+.Content h3 {
+  color: #3e4348;
+}
+
+.Content p {
+  color: #3e4348;
+  line-height: 1.7;
+}
+
+.PricingLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  text-align: center;
+}
+
+.PricingLinks a {
+  color: #5174d1;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.Word {
+  white-space: nowrap;
+}
+
+.GridTwo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4.5rem;
+}
+
+.Cardbox1,
+.Cardbox2 {
+  width: 50%;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.CardContent h3 {
+  color: #3e4348;
+}
+
+.CardContent p {
+  color: #3e4348;
+  line-height: 1.7;
+}
+
+.CardContent .CardLink {
+  color: #5174d1;
+}
+
+@media (max-width: 594px) {
+  .Pricing {
+    padding: 3rem 1.3rem;
+  }
+
+  .GridOne,
+  .GridTwo {
+    flex-flow: column;
+  }
+
+  .Box1,
+  .Box2 {
+    width: 100%;
+  }
+
+  .Box1,
+  .Cardbox1 {
+    margin-right: 0;
+  }
+
+  .Cardbox1,
+  .Cardbox2 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 842px) and (min-width: 799px) {
+  .Pricing {
+    padding: 3rem 4rem;
+  }
+}
+
+@media (min-width: 1023px) {
+  .Pricing {
+    padding: 3rem 9rem;
+  }
+}
+
+@media (max-width: 1034px) and (min-width: 1023px) {
+  .Pricing {
+    padding: 3rem 10rem;
+  }
+}

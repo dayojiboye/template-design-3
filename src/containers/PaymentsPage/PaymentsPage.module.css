@@ -1,0 +1,59 @@
+.Main {
+  width: 100%;
+}
+
+.Fixedbar {
+  background: white;
+  height: 60px;
+  width: 100%;
+  box-shadow: -1px 5px 23px -16px rgba(43, 42, 43, 1);
+  position: fixed;
+  z-index: 300;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.6rem 2rem;
+  transition: all 0.7s ease-in-out;
+}
+
+.StartBtn a {
+  background: #5174d1;
+  border: 1px solid #5174d1;
+  display: inline-block;
+  border-radius: 4px;
+  padding: 0.6rem 1.5rem;
+  font: inherit;
+  color: white;
+  outline: none;
+  transition: 0.2s;
+}
+
+.StartBtn a:hover {
+  background: #2046af;
+  border: 1px solid #2046af;
+}
+
+@media (max-width: 700px) {
+  .Fixedbar {
+    bottom: -100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6rem 0;
+  }
+
+  .Fixedbar.Show {
+    bottom: 0;
+  }
+}
+
+@media (min-width: 700px) {
+  .Fixedbar {
+    top: -100%;
+  }
+
+  .Fixedbar.Show {
+    top: 0;
+  }
+}

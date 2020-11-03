@@ -1,0 +1,29 @@
+.DestinationLinks {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+}
+
+.Copyright {
+  color: gray;
+}
+
+.Dlink {
+  margin-bottom: 1rem;
+}
+
+.Dlink a {
+  color: white;
+}
+
+@media (max-width: 700px) {
+  .DestinationLinks {
+    flex-flow: column;
+    text-align: center;
+  }
+
+  .DestLinks {
+    margin-top: 1rem;
+  }
+}

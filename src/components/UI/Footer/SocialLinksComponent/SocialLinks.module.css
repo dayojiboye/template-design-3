@@ -1,0 +1,32 @@
+.SocialLinks {
+  width: 100%;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Language a {
+  color: white;
+}
+
+.SocLinks {
+  display: flex;
+}
+
+.SocLinks a {
+  color: white;
+}
+
+@media (max-width: 700px) {
+  .SocialLinks {
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .SocLinks {
+    margin-top: 2rem;
+  }
+}

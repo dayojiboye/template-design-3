@@ -1,0 +1,48 @@
+.PrimaryLink {
+  color: #727273;
+  text-transform: uppercase;
+  width: 50%;
+  margin-bottom: 2rem;
+}
+
+.PrimaryLinkHeader {
+  font-size: 1.1rem;
+}
+
+.PrimarySublink a {
+  color: white;
+  font-size: 1rem;
+  text-transform: initial;
+  display: table;
+  margin: 1rem 0;
+}
+
+.PrimarySublink.Show {
+  /* display: block; */
+  max-height: 200px;
+}
+
+@media (max-width: 700px) {
+  .PrimaryLink {
+    width: 100%;
+    text-align: center;
+  }
+
+  .PrimarySublink {
+    /* display: none; */
+    max-height: 0;
+    overflow: hidden;
+    margin: auto;
+    transition: all 0.2s ease;
+  }
+
+  .PrimarySublink a {
+    margin: 1rem auto;
+  }
+}
+
+@media (min-width: 950px) {
+  .PrimaryLink {
+    width: 25%;
+  }
+}

@@ -1,0 +1,51 @@
+.Cart {
+  width: 100%;
+  text-align: center;
+}
+
+.Cart header {
+  background: #1b2126;
+  padding: 3rem 0;
+}
+
+.Cart h1 {
+  width: 90%;
+  margin: 0 auto;
+  color: white;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+.TotalPrice {
+  width: 100%;
+  background: #f2f2f2;
+  padding: 2rem 0;
+}
+
+.TotalPrice h3 {
+  margin: 0;
+  color: #3e4348;
+}
+
+.TotalPrice p {
+  color: #3e4348;
+  font-weight: bold;
+}
+
+.TotalPrice a {
+  background: #49a4d5;
+  border: 1px solid #49a4d5;
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  margin: 0.4rem 0;
+  padding: 0.7rem 2rem;
+  border-radius: 3px;
+  /* outline: none; */
+  transition: 0.2s;
+}
+
+.TotalPrice a:hover {
+  background: #1b88c2;
+  border: 1px solid #1b88c2;
+}

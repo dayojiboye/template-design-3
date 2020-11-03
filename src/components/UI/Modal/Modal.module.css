@@ -1,0 +1,13 @@
+.Dismiss {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem 1.7rem 1rem 0;
+}
+
+.DismissBtn {
+  background: transparent;
+  border: none;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+}

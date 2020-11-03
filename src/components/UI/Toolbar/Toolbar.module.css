@@ -1,0 +1,311 @@
+.Header {
+  background: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  border-bottom: 1px solid #ccc;
+  height: 62px;
+  position: relative;
+  z-index: 150;
+}
+
+.BrandLogo a {
+  color: black;
+  font-size: 1.5rem;
+}
+
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.MainNav {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.MainNav ul {
+  list-style: none;
+  display: flex;
+}
+
+.Hasdropdown {
+  margin-right: 2rem;
+  position: relative;
+  cursor: default;
+  display: inline-block;
+}
+
+.ButtonNav {
+  background: transparent;
+  padding: 16px;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 0;
+  outline: none;
+}
+
+.DropdownMenu {
+  position: absolute;
+  display: none;
+  min-width: 160px;
+  padding: 1rem 0;
+  background: white;
+  box-shadow: -1px 5px 30px -16px rgba(43, 42, 43, 1);
+  border-top: 1px solid whitesmoke;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.Hasdropdown:hover .DropdownMenu {
+  display: block;
+}
+
+.DropdownMenu a {
+  display: block;
+  color: rgb(58, 55, 55);
+  padding: 12px 16px;
+}
+
+.DropdownMenu a:hover {
+  background: #e5ecee;
+}
+
+.ExtraNav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.ExtraNav ul li {
+  margin-right: 1rem;
+}
+
+.ExtraNav ul li a {
+  color: black;
+  font-weight: bold;
+}
+
+.CartDropdown {
+  position: relative;
+  margin-right: 0.5rem;
+}
+
+.CartBtn {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 11px;
+}
+
+.CartBtn.Hide {
+  display: none;
+}
+
+.CartDropMenu {
+  position: absolute;
+  min-width: 300px;
+  right: -50%;
+  display: none;
+  padding: 1rem 0;
+  background: white;
+  box-shadow: -1px 5px 30px -16px rgba(43, 42, 43, 1);
+  border-top: 1px solid whitesmoke;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.CartDropdown:hover .CartDropMenu {
+  display: block;
+}
+
+.CartContent {
+  padding: 0 1.5rem 1rem 1.5rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.CartContent h4 {
+  margin: 0;
+}
+
+.CartContent p {
+  text-align: center;
+  color: rgb(58, 55, 55);
+  margin: 2rem 0 1.5rem 0;
+}
+
+.ShopBtn a {
+  background: #49a4d5;
+  border: 1px solid #49a4d5;
+  color: white;
+  display: block;
+  border-radius: 4px;
+  padding: 1rem 1.5rem;
+  font: inherit;
+  text-align: center;
+  outline: none;
+  transition: 0.2s;
+}
+
+.ShopBtn a:hover {
+  background: #1b88c2;
+  border: 1px solid #1b88c2;
+}
+
+.CartFooter {
+  padding-top: 1rem;
+}
+
+.CartFooter a {
+  display: block;
+  color: rgb(58, 55, 55);
+  padding: 12px 30px;
+  font-weight: bold;
+}
+
+.CartFooter a:hover {
+  background: #e5ecee;
+}
+
+.CartSlidebar {
+  position: fixed;
+  right: -100%;
+  top: 61px;
+  bottom: 0;
+  width: 100%;
+  max-height: none !important;
+  pointer-events: auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  z-index: 200;
+  background: white;
+  border-top: 1px solid #ccc;
+  padding: 2rem 0;
+  transition: all 0.2s ease-out;
+}
+
+.DrawerToggleBtn {
+  display: none;
+}
+
+.Bar1,
+.Bar2,
+.Bar3 {
+  width: 1.5rem;
+  height: 0.125rem;
+  background: rgb(58, 55, 55);
+  margin: 0.375rem 0;
+  transition: 0.2s;
+}
+
+.DrawerToggleBtn.Change .Bar1 {
+  -webkit-transform: rotate(-45deg) translate(-4px, 6px);
+  transform: rotate(-45deg) translate(-4px, 6px);
+}
+
+.DrawerToggleBtn.Change .Bar2 {
+  opacity: 0;
+}
+
+.DrawerToggleBtn.Change .Bar3 {
+  -webkit-transform: rotate(45deg) translate(-5px, -8px);
+  transform: rotate(45deg) translate(-5px, -8px);
+}
+
+@media (max-width: 700px) {
+  .Header {
+    justify-content: space-between;
+    padding: 0 1.3rem;
+  }
+
+  .MainNav,
+  .ExtraNav {
+    display: none;
+  }
+
+  .CartDropdown {
+    margin-left: auto;
+  }
+
+  .CartDropdown:hover .CartDropMenu {
+    display: none;
+  }
+
+  .CartSlidebar.Show {
+    right: 0;
+  }
+
+  .CartFooter {
+    padding: 0;
+  }
+
+  .CartFooter a {
+    font-weight: bold;
+    padding: 25px 30px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .DrawerToggleBtn {
+    display: block;
+  }
+}
+
+@media (max-width: 949px) and (min-width: 700px) {
+  .Header {
+    justify-content: space-between;
+  }
+
+  .MainNav,
+  .ExtraNav {
+    display: none;
+  }
+
+  .CartDropdown {
+    margin-left: auto;
+  }
+
+  .CartDropdown:hover .CartDropMenu {
+    display: none;
+  }
+
+  .CartSlidebar {
+    width: 50%;
+  }
+
+  .CartSlidebar.Show {
+    right: 0;
+  }
+
+  .CartFooter {
+    padding: 0;
+  }
+
+  .CartFooter a {
+    font-weight: bold;
+    padding: 25px 30px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .DrawerToggleBtn {
+    display: block;
+  }
+}
+
+@media (min-width: 950px) {
+  .CartBtn.Hide {
+    display: block;
+  }
+
+  .CartDropdown {
+    margin-right: 0;
+  }
+}
+
+/* 995px - previous max-width */

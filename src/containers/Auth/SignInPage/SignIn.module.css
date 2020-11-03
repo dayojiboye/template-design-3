@@ -1,0 +1,16 @@
+.SignIn {
+  width: 100%;
+  padding: 5rem 0;
+}
+
+@media (min-height: 600px) {
+  .SignIn {
+    padding: 11rem 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .SignIn {
+    padding: 0;
+  }
+}

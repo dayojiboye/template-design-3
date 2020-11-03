@@ -1,0 +1,34 @@
+.Table {
+  border-spacing: 0 15px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.Table tr {
+  margin: 2rem 0;
+  display: block;
+  box-shadow: 0 4px 10px rgba(55, 56, 60, 0.15);
+}
+
+.Table td {
+  text-align: center;
+  padding: 0.3125rem;
+  width: calc(90% / 4);
+}
+
+.Table td img {
+  width: 100%;
+}
+
+.Table td p {
+  color: #3e4348;
+}
+
+.Table td button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+  color: #49a4d5;
+}

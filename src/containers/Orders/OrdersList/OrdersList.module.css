@@ -1,0 +1,23 @@
+.OrdersList {
+  padding: 2rem 1rem;
+  list-style: none;
+  margin: 0 auto;
+  width: 700px;
+  max-width: 100%;
+}
+
+.OrdersList li {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  border-radius: 3px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-around;
+  /* align-items: baseline; */
+}
+
+.OrdersList p {
+  margin: 0.5rem 0;
+  color: #3e4348;
+  font-weight: bold;
+}

@@ -1,0 +1,173 @@
+.Form {
+  width: 790px;
+  max-width: 100%;
+  margin: 1.7rem auto;
+}
+
+.BorderTop {
+  border: none;
+  border-top: 1px solid #d5d8db;
+  height: 0;
+}
+
+.FormGrid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1.5rem 0 1rem 0;
+}
+
+.FormGroup {
+  width: 48.5%;
+  margin-bottom: 1.5rem;
+}
+
+.Label {
+  display: block;
+  font-size: 0.8rem;
+  color: gray;
+  margin-bottom: 0.3rem;
+  transition: color 0.4s ease-in-out;
+}
+
+.Label.Invalid {
+  color: red;
+}
+
+.Input {
+  width: 100%;
+  padding: 0.8rem;
+  outline: none;
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 3px;
+  font-size: 1rem;
+  color: gray;
+  transition: border 0.4s ease-in-out;
+}
+
+.Input:focus {
+  border: 1px solid #49a4d5;
+}
+
+.Input.Invalid {
+  border: 1px solid red;
+  background: url('../../../../assets/icons/risk.svg');
+  background-repeat: no-repeat;
+  background-position: 95% 13px;
+  background-size: 17px;
+}
+
+.Error {
+  color: red;
+  display: block;
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+  line-height: 1.5;
+}
+
+.FormCheckGroup {
+  margin: 1.7rem 0;
+  display: flex;
+}
+
+.CheckLabel {
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+  line-height: 1.7;
+  color: gray;
+  margin-top: 0.2rem;
+}
+
+.CheckLabel a {
+  color: #49a4d5;
+}
+
+.Checkbox {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+  transition: border 0.4s ease-in-out;
+}
+
+.Checkbox:checked {
+  background: url('../../../../assets/icons/tick.svg');
+  background-position: center;
+  border: 1px solid #49a4d5;
+  background-repeat: no-repeat;
+}
+
+.Checkbox.Invalid {
+  border: 1px solid red;
+}
+
+.FormFooter {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1.3rem 0;
+}
+
+.FormFooter p {
+  margin-right: 5rem;
+  color: gray;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.FormFooter p a {
+  color: #49a4d5;
+}
+
+.SubmitButton {
+  width: 48%;
+  background: #49a4d5;
+  border: 1px solid #49a4d5;
+  color: white;
+  font-family: inherit;
+  font-size: 0.8rem;
+  padding: 0.7rem 0;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.SubmitButton:hover {
+  background: #1b88c2;
+  border: 1px solid #1b88c2;
+}
+
+.SubmitButton:disabled {
+  background: #ccc;
+  border: 1px solid #ccc;
+  cursor: not-allowed;
+}
+
+@media (max-width: 700px) {
+  .FormGrid {
+    flex-flow: column;
+  }
+
+  .FormGroup {
+    width: 100%;
+  }
+
+  .FormFooter {
+    flex-flow: column;
+    justify-content: flex-start;
+  }
+
+  .FormFooter p {
+    margin: 0 0 1.4rem 0;
+  }
+
+  .SubmitButton {
+    width: 100%;
+  }
+}

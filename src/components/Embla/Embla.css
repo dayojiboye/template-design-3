@@ -1,0 +1,121 @@
+.embla {
+  position: relative;
+  margin-top: 1rem;
+}
+
+.embla__viewport {
+  overflow: hidden;
+}
+
+.embla__viewport.is-draggable {
+  cursor: move;
+  cursor: grab;
+}
+
+.embla__viewport.is-dragging {
+  cursor: grabbing;
+}
+
+.embla__container {
+  display: flex;
+  will-change: transform;
+  /* margin-left: -1rem; */
+  padding-bottom: 1rem;
+  /* padding-top: 1rem; */
+}
+
+.embla__slide {
+  flex: 0 0 auto;
+  width: 500px;
+  max-width: 100%;
+  position: relative;
+  padding-top: 0.2rem;
+  padding-left: 1rem;
+  counter-increment: embla;
+}
+
+.embla__slide__inner {
+  position: relative;
+  min-height: 200px;
+  /* padding-bottom: 46%; */
+}
+
+.embla__slide__inner:before {
+  color: white;
+  font-weight: 300;
+  line-height: 1;
+  /* content: counter(embla); */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.embla__dots {
+  /* position: absolute; */
+  /* margin-top: 1rem; */
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 0;
+  padding-bottom: 5rem;
+  padding-top: 2rem;
+  justify-content: center;
+  /* align-items: center; */
+  /* left: 0;
+  right: 0;
+  top: 93%; */
+}
+
+.embla__dot {
+  background-color: #b3b9bb;
+  cursor: pointer;
+  position: relative;
+  padding: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  border: 1px solid #b3b9bb;
+  display: flex;
+  align-items: center;
+  outline: none;
+}
+
+.embla__dot:hover {
+  background: grey;
+  border: 1px solid gray;
+}
+
+/* .embla__dot:after {
+  width: 10px;
+  height: 10px;
+  content: '';
+} */
+
+.embla__dot.is-selected {
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 100%;
+}
+
+/* .embla__dot.is-selected:after {
+  opacity: 1;
+} */
+
+@media (max-width: 700px) {
+  .embla__slide {
+    padding: 0.2rem 2rem;
+  }
+
+  .embla__dots {
+    /* flex-wrap: wrap; */
+    line-height: 2;
+    padding: 1rem 1.2rem 3rem 1.2rem;
+  }
+
+  .embla__dot {
+    margin: 0.5rem 0.75rem;
+  }
+}

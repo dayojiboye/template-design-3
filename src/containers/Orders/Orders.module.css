@@ -1,0 +1,25 @@
+.Orders {
+  width: 100%;
+}
+
+.Orders header {
+  margin: 0 auto;
+  background: #1B2126;
+  padding: 3rem 0;
+}
+
+.Orders header h1 {
+  width: 90%;
+  margin: 0 auto;
+  color: white;
+  letter-spacing: 1px;
+  /* text-align: left; */
+}
+
+.UnAuthOrderText {
+  text-align: center;
+  color: #3e4348;
+  margin-top: 2rem;
+  padding: 1rem;
+  line-height: 1.5;
+}

@@ -1,0 +1,91 @@
+[
+	{
+		"name": "vw412",
+		"color": "red",
+		"imgUrl": "https://cdn.pixabay.com/photo/2019/04/11/18/43/vw-4120364_960_720.png",
+		"desc": "Red vw beetle convertible",
+		"quantity": 0,
+		"price": 20000
+	},
+	
+	{
+		"name": "vw474",
+		"color": "orange",
+		"imgUrl": "https://cdn.pixabay.com/photo/2020/01/04/14/53/free-and-edited-4740815_960_720.png",
+		"desc": "Orange vw beetle convertible",
+		"quantity": 0,
+		"price": 20000
+	},
+	
+	{
+		"name": "vw667",
+		"color": "yellow",
+		"imgUrl": "https://cdn.pixabay.com/photo/2015/03/10/17/30/vw-beetle-667460_960_720.jpg",
+		"desc": "Yellow vw beetle non-convertible",
+		"quantity": 0,
+		"price": 22000
+	},
+	
+	{
+		"name": "vw110",
+		"color": "black",
+		"imgUrl": "https://cdn.pixabay.com/photo/2015/12/22/13/36/autostadt-wolfsburg-1104081_960_720.jpg",
+		"desc": "Black vw beetle non-convertible",
+		"quantity": 0,
+		"price": 25000
+	},
+	
+	{
+		"name": "vw481",
+		"color": "black",
+		"imgUrl": "https://cdn.pixabay.com/photo/2020/02/01/23/39/volkswagen-4811726_960_720.jpg",
+		"desc": "Black vw beetle convertible",
+		"quantity": 0,
+		"price": 23500
+	},
+	
+	{
+		"name": "vw246",
+		"color": "black",
+		"imgUrl": "https://cdn.pixabay.com/photo/2014/01/16/13/56/vw-246365_960_720.jpg",
+		"desc": "Black vw beetle non-convertible",
+		"quantity": 0,
+		"price": 21000
+	},
+	
+	{
+		"name": "vw314",
+		"color": "arsh",
+		"imgUrl": "https://cdn.pixabay.com/photo/2018/02/09/15/28/car-3141822_960_720.jpg",
+		"desc": "Arsh vw beetle non-convertible",
+		"quantity": 0,
+		"price": 20000
+	},
+	
+	{
+		"name": "vw360",
+		"color": "dark blue",
+		"imgUrl": "https://cdn.pixabay.com/photo/2018/08/12/20/15/vw-3601675_960_720.jpg",
+		"desc": "Dark blue vw beetle non-convertible",
+		"quantity": 0,
+		"price": 24500
+	},
+	
+	{
+		"name": "vw883",
+		"color": "red",
+		"imgUrl": "https://cdn.pixabay.com/photo/2013/03/01/19/25/volkswagen-88358_960_720.jpg",
+		"desc": "Red vw beetle non-convertible",
+		"quantity": 0,
+		"price": 22000
+	},
+	
+	{
+		"name": "vw370",
+		"color": "light green",
+		"imgUrl": "https://cdn.pixabay.com/photo/2018/09/28/02/19/vw-3708344_960_720.jpg",
+		"desc": "Light green vw beetle convertible",
+		"quantity": 0,
+		"price": 21500
+	}
+]
