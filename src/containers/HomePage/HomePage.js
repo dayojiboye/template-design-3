@@ -36,7 +36,8 @@ class HomePage extends Component {
 
   startBarHandler = () => {
     if (
-      document.documentElement.scrollTop < 8103 &&
+      document.documentElement.scrollTop <
+        document.documentElement.scrollHeight - 1800 &&
       document.documentElement.scrollTop > 237
     ) {
       this.setState({ isStartbarOpen: true });

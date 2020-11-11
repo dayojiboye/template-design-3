@@ -40,7 +40,8 @@ class PaymentsPage extends Component {
 
   startBarHandler = () => {
     if (
-      document.documentElement.scrollTop < 9850 &&
+      document.documentElement.scrollTop <
+        document.documentElement.scrollHeight - 1800 &&
       document.documentElement.scrollTop > 237
     ) {
       this.setState({ isStartbarOpen: true });

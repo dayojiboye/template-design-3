@@ -41,7 +41,6 @@ ion-icon[data-chevron-down] {
 }
 
 ion-icon[data-chevron-down].rotate {
-  margin-bottom: 0.4rem;
   transform: rotateZ(-180deg);
 }
 
@@ -61,6 +60,7 @@ ion-icon[name='add-circle-outline'] {
 
 ion-icon[name='cart-outline'] {
   vertical-align: middle;
+  --ionicon-stroke-width: 22px;
 }
 
 ion-icon[data-nav-cart] {
